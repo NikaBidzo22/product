@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+.main {
+    width: 100%;
+    height: 800px;
+    background: #F2EAE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    display: flex;
+}
+
+.hero {
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container {
+    padding: 32px;
+}
+
+.perf {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 5px;
+    color: #6C7289;
+}
+
+.entry {
+    height: 96px;
+    width: 236px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1C232B;
+    margin-top: 20px;
+}
+
+.long {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #6C7289;
+    margin-top: 24px;
+    margin-bottom: 29px;
+}
+
+.price {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3D8168;
+    display: flex;
+    align-items: center;
+}
+
+.real {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration-line: line-through;
+    color: #6C7289;
+    margin-left: 19px;
+}
+
+.button {
+    margin-top: 30px;
+    height: 48px;
+    width: 236px;
+    border-radius: 8px;
+    background: #3D8168;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transition: 1.4s;
+}
+
+.button:hover {
+    background: #1A4032;
+}
+
+.cart {
+    margin-right: 11.61px;
+}
+
+@media screen and (max-width: 375px ){
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 611px;
+        width: 343px;
+        border-radius: 10px;
+    }
+
+    .hero {
+        content: url(./product-preview-card-component-main/images/image-product-mobile.jpg);
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .container {
+        padding: 24px;
+    }
+
+    .entry {
+        height: 64px;
+        width: 295px;
+        margin-top: 12px;
+    }
+
+    .long {
+        height: 92px;
+        width: 295px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .button {
+        height: 48px;
+        width: 295px;
+        margin-top: 20px;
+    }
+}
